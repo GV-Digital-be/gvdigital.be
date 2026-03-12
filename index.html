@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GV Digital — Apps, Games & SaaS Support</title>
+  <meta name="description" content="GV Digital is a small software studio building applications, games, and providing SaaS support. Based in Belgium.">
+  <meta property="og:title" content="GV Digital — Apps, Games & SaaS Support">
+  <meta property="og:description" content="Small software studio building applications, games, and providing SaaS support.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Nav -->
+  <header class="container">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-mark">GV</div>
+        <span class="nav-logo-text">GV Digital</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Building digital<br>products that matter.</h1>
+      <p>Apps, games & SaaS support — crafted with care.</p>
+      <a href="#contact" class="btn">Get in touch</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-icon">📱</div>
+          <div class="service-card-label">Applications</div>
+          <div class="service-card-desc">Mobile & web apps built for performance.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">🎮</div>
+          <div class="service-card-label">Games</div>
+          <div class="service-card-desc">Interactive experiences that engage.</div>
+        </div>
+        <div class="service-card service-card--wide">
+          <div class="service-card-icon">⚙️</div>
+          <div>
+            <div class="service-card-label">SaaS Support</div>
+            <div class="service-card-desc">Ongoing development, maintenance & technical support for SaaS products.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p class="subtitle">Have a project in mind? Drop us a message.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <input type="text" name="name" class="form-field" placeholder="Your name" required aria-label="Your name">
+          <input type="email" name="email" class="form-field" placeholder="Your email" required aria-label="Your email">
+        </div>
+        <textarea name="message" class="form-field" placeholder="Your message..." required aria-label="Your message"></textarea>
+        <button type="submit" class="btn btn-full">Send message</button>
+        <div id="form-feedback" class="form-feedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="footer">
+      <span>&copy; 2026 GV Digital</span>
+      <a href="/qrstash/privacy-policy/">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

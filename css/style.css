@@ -1,0 +1,334 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@600;700;800&display=swap');
+
+/* === Design Tokens === */
+:root {
+  /* Dark mode (default) */
+  --bg: #090e18;
+  --text: #ffffff;
+  --text-muted: #7a9bb5;
+  --text-faint: #556;
+  --accent-orange: #e8842a;
+  --accent-blue: #2d8ac7;
+  --card-bg: rgba(232,132,42,0.08);
+  --card-border: rgba(232,132,42,0.18);
+  --input-bg: rgba(255,255,255,0.05);
+  --input-border: rgba(255,255,255,0.1);
+  --divider: rgba(232,132,42,0.15);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --text: #0f1a2e;
+    --text-muted: #5a7a8f;
+    --text-faint: #8a9aaa;
+    --card-bg: linear-gradient(135deg, #f0f6fa, #e8f0f6);
+    --card-border: #d4e2ec;
+    --input-bg: #f4f7fa;
+    --input-border: #d4e2ec;
+    --divider: #e8edf2;
+  }
+}
+
+/* === Reset === */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === Layout === */
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* === Typography === */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* === Nav === */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-logo-mark {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--accent-orange);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--accent-orange);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-logo-text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+/* === Hero === */
+.hero {
+  padding: 60px 0 48px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  background: var(--accent-blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-full {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* === Services === */
+.services {
+  padding-bottom: 48px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.service-card-icon {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-orange);
+  margin-bottom: 6px;
+}
+
+.service-card-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.service-card--wide {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-card--wide .service-card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+/* === Contact === */
+.contact {
+  padding-bottom: 48px;
+}
+
+.contact h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.contact .subtitle {
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-field:focus {
+  border-color: var(--accent-blue);
+}
+
+.form-field::placeholder {
+  color: var(--text-faint);
+}
+
+textarea.form-field {
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+.form-feedback {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+  display: none;
+}
+
+.form-feedback--success {
+  color: #22d68a;
+}
+
+.form-feedback--error {
+  color: #ff4d6a;
+}
+
+/* === Footer === */
+.footer {
+  border-top: 1px solid var(--divider);
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--text);
+}
+
+/* === Light mode card-bg fix (gradient can't be a custom property with background-color) === */
+@media (prefers-color-scheme: light) {
+  .service-card {
+    background: linear-gradient(135deg, #f0f6fa, #e8f0f6);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 520px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card--wide {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+}

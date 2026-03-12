@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Stash — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for QR Stash, a QR code scanner app by GV Digital.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .policy h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-orange);
+      margin: 28px 0 8px;
+    }
+    .policy p, .policy li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .policy ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .policy li {
+      margin-bottom: 6px;
+    }
+    .policy a {
+      color: var(--accent-blue);
+    }
+    .policy strong {
+      color: var(--text);
+    }
+    .policy-highlight {
+      background: var(--card-bg);
+      border-left: 3px solid var(--accent-orange);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    @media (prefers-color-scheme: light) {
+      .policy-highlight {
+        background: #f0f6fa;
+      }
+    }
+    .policy-highlight strong {
+      color: var(--text);
+    }
+    .policy-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .policy-subtitle {
+      color: var(--text-faint);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-mark">GV</div>
+        <span class="nav-logo-text">GV Digital</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container policy" style="padding-top: 40px; padding-bottom: 48px;">
+    <h1 class="policy-title">Privacy Policy</h1>
+    <p class="policy-subtitle">QR Stash — QR Code Scanner &bull; Last updated: March 11, 2026</p>
+
+    <div class="policy-highlight">
+      <strong>The short version:</strong> QR Stash does not collect, store, or transmit any personal data. Everything stays on your device.
+    </div>
+
+    <h2>What data does QR Stash access?</h2>
+    <ul>
+      <li><strong>Camera</strong> — used solely to scan QR and barcodes. Camera frames are processed on-device by Google ML Kit and are never transmitted, stored, or shared.</li>
+      <li><strong>Scan history</strong> — stored locally on your device in an SQLite database. It is never uploaded, synced, or accessible to us or any third party.</li>
+      <li><strong>Wi-Fi state</strong> — used only when you choose to connect to a Wi-Fi network from a scanned QR code. No network information is collected.</li>
+    </ul>
+
+    <h2>URL safety checks</h2>
+    <p>QR Stash checks scanned URLs for suspicious patterns (known phishing domains, IP-based URLs, unusual TLDs). This check runs entirely on your device using local pattern matching. <strong>No URLs are sent to any server.</strong></p>
+
+    <h2>Advertising</h2>
+    <p>The free version of QR Stash displays banner ads provided by <strong>Google AdMob</strong>. Google may collect and use data for ad personalisation in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    <p>You can manage your ad preferences via your device's settings or by purchasing the ad-free upgrade within the app. When you first open QR Stash, you will be asked for your consent regarding personalised ads (where required by law).</p>
+
+    <h2>In-app purchases</h2>
+    <p>QR Stash offers a one-time purchase to remove ads. This transaction is handled entirely by Google Play Billing. We do not receive or store any payment information.</p>
+
+    <h2>Permissions summary</h2>
+    <ul>
+      <li><strong>CAMERA</strong> — scan QR codes</li>
+      <li><strong>INTERNET</strong> — load ads and process in-app purchases (no app data is transmitted)</li>
+      <li><strong>VIBRATE</strong> — haptic feedback on successful scan</li>
+      <li><strong>ACCESS_WIFI_STATE / CHANGE_WIFI_STATE</strong> — connect to Wi-Fi from scanned codes</li>
+    </ul>
+    <p>QR Stash does not request access to your contacts, location, phone state, microphone, or storage beyond scoped access for saving generated QR codes.</p>
+
+    <h2>Children's privacy</h2>
+    <p>QR Stash is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Data retention</h2>
+    <p>Scan history is stored locally on your device. You can delete individual entries, clear all history, or configure automatic deletion (30, 60, 90, or 365 days) in Settings. Uninstalling the app removes all data.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we update this privacy policy, the changes will be posted on this page with an updated date. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach us at <a href="mailto:privacy@gv-digital.be">privacy@gv-digital.be</a>.</p>
+  </main>
+
+  <footer class="container">
+    <div class="footer">
+      <span>&copy; 2026 GV Digital</span>
+      <a href="/qrstash/privacy-policy/">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
