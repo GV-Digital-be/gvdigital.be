@@ -37,10 +37,16 @@
     btn.textContent = 'Sending...';
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({
+          access_key: 'f50ffbea-5940-4889-bfde-10d301d203b8',
+          name,
+          email,
+          message,
+          subject: 'GV Digital contact form: ' + name,
+        }),
       });
 
       const data = await res.json();
