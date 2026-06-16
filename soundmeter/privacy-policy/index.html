@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Meter — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Sound Meter, a decibel / sound level meter app by GV Digital.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .policy h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-orange);
+      margin: 28px 0 8px;
+    }
+    .policy p, .policy li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .policy ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .policy li {
+      margin-bottom: 6px;
+    }
+    .policy a {
+      color: var(--accent-blue);
+    }
+    .policy strong {
+      color: var(--text);
+    }
+    .policy-highlight {
+      background: var(--card-bg);
+      border-left: 3px solid var(--accent-orange);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    @media (prefers-color-scheme: light) {
+      .policy-highlight {
+        background: #f0f6fa;
+      }
+    }
+    .policy-highlight strong {
+      color: var(--text);
+    }
+    .policy-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .policy-subtitle {
+      color: var(--text-faint);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-mark">GV</div>
+        <span class="nav-logo-text">GV Digital</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container policy" style="padding-top: 40px; padding-bottom: 48px;">
+    <h1 class="policy-title">Privacy Policy</h1>
+    <p class="policy-subtitle">Sound Meter — Decibel / Sound Level Meter &bull; Last updated: June 16, 2026</p>
+
+    <div class="policy-highlight">
+      <strong>The short version:</strong> Sound Meter does not collect, store, or transmit any personal data. The microphone is used only to measure loudness in real time — no audio is ever recorded. Everything stays on your device.
+    </div>
+
+    <h2>What data does Sound Meter access?</h2>
+    <ul>
+      <li><strong>Microphone</strong> — used solely to measure the ambient sound level (decibels) in real time. Audio is analysed on-device to calculate a loudness value and is <strong>never recorded, saved, transmitted, or shared</strong>. No recordings or audio files are created.</li>
+      <li><strong>Measurement history</strong> — recorded sessions, saved readings, and daily exposure summaries are stored locally on your device in an SQLite database. They are never uploaded, synced, or accessible to us or any third party.</li>
+      <li><strong>Settings</strong> — your preferences (theme, calibration offset, alert threshold, and similar options) are stored locally on your device.</li>
+    </ul>
+
+    <h2>Saved readings and sessions</h2>
+    <p>When you record a session or save a reading, Sound Meter stores only the resulting measurement data (such as duration and average, minimum, and maximum decibel values) and any name you give it. This information is stored locally on your device. <strong>No location data, GPS coordinates, or audio is collected.</strong></p>
+
+    <h2>Advertising</h2>
+    <p>Sound Meter displays ads provided by <strong>Google AdMob</strong>. Google may collect and use data for ad personalisation in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    <p>You can manage your ad preferences via your device's settings. When required by law (for example, under GDPR or CCPA), Sound Meter shows a consent form asking for your choice regarding personalised ads.</p>
+
+    <h2>Permissions summary</h2>
+    <ul>
+      <li><strong>RECORD_AUDIO</strong> — measure the ambient sound level (no audio is recorded or stored)</li>
+      <li><strong>VIBRATE</strong> — haptic feedback for threshold alerts</li>
+      <li><strong>INTERNET</strong> — load ads (no app data or measurements are transmitted)</li>
+    </ul>
+    <p>Sound Meter does not request access to your camera, contacts, location, phone state, or files.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Sound Meter is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Data retention</h2>
+    <p>All measurement history and settings are stored locally on your device. You can delete individual sessions and readings within the app at any time. Uninstalling the app removes all data.</p>
+
+    <h2>Disclaimer</h2>
+    <p>Sound Meter is intended for informational and educational purposes only. Measurements depend on your device's microphone and are not a substitute for a calibrated, professional sound level meter. Do not rely on this app for occupational safety, legal, or medical decisions.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we update this privacy policy, the changes will be posted on this page with an updated date. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach us at <a href="mailto:privacy@gv-digital.be">privacy@gv-digital.be</a>.</p>
+  </main>
+
+  <footer class="container">
+    <div class="footer">
+      <span>&copy; 2026 GV Digital</span>
+      <a href="/soundmeter/privacy-policy/">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
